@@ -1,7 +1,6 @@
 import "./startPage.scss";
 import { Link } from "react-router-dom";
-import { WiSunset, WiSolarEclipse } from "react-icons/wi";
-
+import { WiSolarEclipse } from "react-icons/wi";
 export const StartPage = () => {
   return (
     <>
