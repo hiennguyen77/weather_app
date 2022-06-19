@@ -1,0 +1,117 @@
+.weather_wrap {
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+  background-image: linear-gradient(#654ea3, #eaafc8);
+  margin: 2rem 20%;
+  border-radius: 8px;
+  height: 75rem;
+  overflow: hidden;
+
+  .back_wrap {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    .backIcon {
+      font-size: 3rem;
+      color: #fff;
+    }
+  }
+
+  .weather_container {
+    z-index: 10;
+    height: 100%;
+
+    input {
+      font-size: 1.4rem;
+      margin: 3rem;
+      width: 50%;
+      padding: 1.2rem 0 1.2rem 1rem;
+      border: none;
+      border-radius: 20rem;
+      outline: none;
+    }
+
+    .weather_body {
+      h2 {
+        font-size: 3rem;
+        color: #333;
+        line-height: 1;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+      }
+      h3 {
+        font-size: 8rem;
+        color: #ffffff;
+        line-height: 1;
+      }
+
+      h4 {
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: 400;
+      }
+
+      .weather_icon {
+        display: inline-block;
+        .icon {
+          width: 8rem;
+        }
+      }
+    }
+
+    .footer {
+      border-top: 4px solid #ffffff;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 3rem;
+
+      .item {
+        h4 {
+          font-size: 2rem;
+          font-weight: 500;
+          margin-top: 2rem;
+          color: #333;
+        }
+        p {
+          font-size: 1.8rem;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  h5 {
+    font-size: 2rem;
+    color: #333;
+  }
+  .noAddress {
+    h3 {
+      margin-top: 3rem;
+      margin-bottom: 10rem;
+    }
+
+    .sunIcon {
+      font-size: 20rem;
+      color: #fff;
+      animation: suniconRemote 2s linear 0s infinite;
+      // animation-duration: 10s linear 0s;
+      // animation-iteration-count: infinite;
+    }
+  }
+
+  .iconSunWeather {
+    font-size: 8rem;
+    color: rgb(238, 255, 0);
+    animation: suniconRemote 2s linear 0s infinite;
+  }
+}
+
+@keyframes suniconRemote {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
