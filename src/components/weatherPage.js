@@ -22,7 +22,7 @@ export const WeatherPage = () => {
         const res = await axios.get(
           `${BASE_URL}/current.json?key=${KEY_API}&q=${encodeURIComponent(
             submit
-          )}&lang=vi/`
+          )}&lang=vi`
         );
 
         setWeather(res.data);
